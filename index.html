@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caravana ENEM CREDE 4 - A Rota para o seu Futuro</title>
+    <!-- Carrega o Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuração de Fonte, Cores e Animação -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        :root {
+            --cor-principal: #1e3a8a; /* Navy Blue - Foco e Seriedade */
+            --cor-acento-claro: #f59e0b; /* Amber 500 - Energia e Destaque */
+            --cor-acento-escuro: #14b8a6; /* Cyan 600 (Teal) - Inovação e Crescimento */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        /* Fundo com Imagem da Caravana (Fundo Enem) */
+        .hero-bg {
+            background-color: var(--cor-principal);
+            background-image: url('https://raw.githubusercontent.com/educaceara/enem/refs/heads/main/fundocaravana.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-principal {
+            background-color: var(--cor-acento-claro);
+            color: var(--cor-principal);
+            transition: all 0.3s ease;
+        }
+        .btn-principal:hover {
+            background-color: #d97706; /* Amber 600 */
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Animação Suave "Gelatina" para o Banner */
+        @keyframes jelly {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(0.99); }
+            50% { transform: scale(1.005); }
+            75% { transform: scale(0.995); }
+        }
+        .animate-jelly:hover {
+            animation: jelly 0.8s ease-in-out infinite alternate;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar simples -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-extrabold text-blue-900">
+                CREDE 4 <span class="text-amber-500">|</span> Caravana ENEM
+            </h1>
+            <!-- Link atualizado para o jogo -->
+            <a href="https://educaceara.github.io/enem/" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-blue-900 hover:text-cyan-600 transition duration-150 hidden sm:block">
+                Inscreva-se
+            </a>
+        </div>
+    </header>
+
+    <!-- 1. Seção de Abertura (Hero Section) -->
+    <section class="hero-bg text-white pt-16 pb-24 sm:py-32 bg-fixed bg-center">
+        <div class="max-w-6xl mx-auto px-4 text-center bg-blue-900/70 p-6 rounded-xl">
+            <!-- Título Impactante -->
+            <h2 class="text-4xl sm:text-6xl font-extrabold leading-tight mb-4 tracking-tight">
+                A ROTA PARA O SEU FUTURO <br class="hidden sm:block"><span class="text-amber-400">COMEÇA AQUI!</span>
+            </h2>
+            <!-- Subtítulo Inspirador -->
+            <p class="text-white-200 text-lg sm:text-2xl mb-10 max-w-3xl mx-auto">
+                O ENEM é a chave que abre todas as portas. A Caravana ENEM da CREDE 4 é o seu mapa, guia e a inspiração que faltava para você brilhar na prova.
+            </p>
+
+            <!-- Botão de Ação Principal (Link atualizado) -->
+            <a href="https://educaceara.github.io/enem/" target="_blank" rel="noopener noreferrer" class="btn-principal text-xl font-bold py-4 px-10 rounded-full inline-block shadow-xl hover:shadow-2xl uppercase tracking-wider">
+                Quiz <b>ENEM, TÔ DENTRO</b>!
+            </a>
+            
+            <!-- Imagem conceitual (Placeholder) -->
+            
+        </div>
+    </section>
+
+    <!-- 2. Sobre o Evento -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-4">
+                CREDE 4 e a Caravana ENEM
+            </h3>
+            <p class="text-center text-xl text-gray-600 mb-12 max-w-4xl mx-auto">
+                Nós sabemos que a jornada é desafiadora, mas você não está sozinho(a)!
+            </p>
+
+            <div class="md:flex md:space-x-8 items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <p class="text-gray-700 text-lg mb-4 leading-relaxed">
+                        A Caravana ENEM é uma iniciativa da Coordenadoria Regional de Desenvolvimento da Educação 4 (CREDE 4), pensada especialmente para os estudantes da região que buscam o sucesso no Ensino Superior.
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed border-l-4 border-amber-500 pl-4 py-1 italic bg-amber-50/50 rounded-lg">
+                        <strong class="font-semibold text-blue-900">Nosso propósito é claro:</strong> Motivar, oferecer orientação de qualidade e preparar <b>você com os melhores profissionais</b> para enfrentar o ENEM com confiança e foco total.
+                    </p>
+                </div>
+                <!-- Placeholder para logo da CREDE 4 ou ícone de missão -->
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="w-full max-w-sm h-64 bg-blue-100 rounded-2xl shadow-lg flex flex-col items-center justify-center p-6 text-center">
+                        <span class="text-5xl text-cyan-600 mb-3">🎯</span>
+                        <h4 class="text-2xl font-bold text-blue-900">MISSÃO & PROPÓSITO</h4>
+                        <p class="text-gray-600">Transformar o futuro dos alunos da CREDE 4 através da educação de excelência.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Novo Banner Gamificação (Com Animação Suave) -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <a href="https://educaceara.github.io/enem/" target="_blank" rel="noopener noreferrer" class="block rounded-xl overflow-hidden shadow-2xl transition duration-500 ease-in-out transform hover:scale-[1.005] animate-jelly">
+                <img src="https://raw.githubusercontent.com/educaceara/enem/refs/heads/main/bannerquiz2.png" 
+                     alt="Banner do Quiz ENEM, Tô Dentro! Clique e comece a jogar." 
+                     class="w-full h-auto rounded-xl object-cover" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/1200x300/1e3a8a/ffffff?text=Banner+Quiz+ENEM';">
+            </a>
+            <p class="mt-4 text-base text-blue-800 font-semibold">
+                <span class="text-xl mr-1">🔥</span> Clique no banner e comece a jogar o Quiz ENEM, Tô Dentro!
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. O Que Você Vai Ganhar Com Isso? (Benefícios Atualizados) -->
+    <section class="py-20 bg-cyan-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl sm:text-4xl font-bold text-center text-cyan-600 mb-12">
+                O Que você vai VIVER na Caravana?
+            </h3>
+            
+            <!-- Grid de 5 benefícios -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                
+                <!-- Benefício 1: Acolhido "Onde me vejo?" -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-800 hover:shadow-xl transition duration-300">
+                    <span class="text-4xl block mb-3">💡</span>
+                    <h4 class="text-xl font-bold text-blue-900 mb-2">Acolhido "Onde me vejo?"</h4>
+                    <p class="text-gray-600 text-sm">Sessões de autoconhecimento e direcionamento para você planejar o seu futuro com clareza.</p>
+                </div>
+
+                <!-- Benefício 2: Gamificação - Quiz ENEM, Tô Dentro! -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-amber-500 hover:shadow-xl transition duration-300">
+                    <span class="text-4xl block mb-3">🎮</span>
+                    <h4 class="text-xl font-bold text-blue-900 mb-2">Gamificação - Quiz ENEM, Tô Dentro!</h4>
+                    <p class="text-gray-600 text-sm">Prepare-se para o ENEM de forma divertida e competitiva, testando seus conhecimentos.</p>
+                </div>
+
+                <!-- Benefício 3: Trajetória acadêmica de alunos egressos e formadores -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-600 hover:shadow-xl transition duration-300">
+                    <span class="text-4xl block mb-3">🎓</span>
+                    <h4 class="text-xl font-bold text-blue-900 mb-2">Trajetória Acadêmica</h4>
+                    <p class="text-gray-600 text-sm">Conheça histórias de sucesso de ex-alunos e formadores que já trilharam este caminho.</p>
+                </div>
+
+                <!-- Benefício 4: Oportunidades da universidade: cursos, bolsas, cotas -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-800 hover:shadow-xl transition duration-300">
+                    <span class="text-4xl block mb-3">🌟</span>
+                    <h4 class="text-xl font-bold text-blue-900 mb-2">Oportunidades Universitárias</h4>
+                    <p class="text-gray-600 text-sm">Entenda como funcionam cursos, bolsas, cotas (Sisu, Prouni) e o que te espera na faculdade.</p>
+                </div>
+
+                <!-- Benefício 5: Dinâmicas Caixinha: Terminei e aí? -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-amber-500 hover:shadow-xl transition duration-300">
+                    <span class="text-4xl block mb-3">🎁</span>
+                    <h4 class="text-xl font-bold text-blue-900 mb-2">Dinâmicas Caixinha: Terminei e aí?</h4>
+                    <p class="text-gray-600 text-sm">Interações práticas e divertidas para desmistificar o futuro pós-Ensino Médio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Programação (Dados Reais Fornecidos) -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-4">
+                Sua Rota de Aprendizado
+            </h3>
+            <p class="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                Confira a programação completa da Caravana ENEM CREDE 4 para esta semana!
+            </p>
+
+            <!-- Tabela de Programação (Real) -->
+            <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+                <div class="p-6 bg-blue-800 text-white font-bold text-center text-2xl">
+                    Próximas Paradas: 05 e 06 de Novembro
+                </div>
+                
+                <!-- Day 1: 05/11 (Quarta-feira) -->
+                <div class="p-6 sm:p-8 border-b-4 border-amber-500">
+                    <h4 class="text-2xl font-extrabold text-blue-900 mb-4 flex items-center">
+                        <span class="text-amber-500 mr-3">📅</span> 05/11 (Quarta-feira) - Camocim/CE
+                    </h4>
+                    
+                    <!-- Turno 1: Manhã -->
+                    <div class="mb-6 p-4 bg-gray-50 rounded-lg border-l-4 border-cyan-600">
+                        <h5 class="text-xl font-bold text-cyan-600 mb-2">Manhã (Início: 8:15)</h5>
+                        <p class="text-gray-700 font-semibold mb-1">Local: EEMTI Monsenhor José Augusta da Silva</p>
+                    </div>
+                    
+                    <!-- Turno 2: Tarde -->
+                    <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-cyan-600">
+                        <h5 class="text-xl font-bold text-cyan-600 mb-2">Tarde (Saída da CREDE: 13h)</h5>
+                        <p class="text-gray-700 font-semibold mb-3">Local: Maria Stela - Camocim/CE</p>
+                        <div class="grid md:grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <p class="font-bold text-blue-800">Equipe de Direcionamento:</p>
+                                <p class="text-gray-600">Gabriel, Elza, Conceição e Anchieta</p>
+                            </div>
+                            <div>
+                                <p class="font-bold text-blue-800">Equipe de Apoio:</p>
+                                <p class="text-gray-600">Zelinha, Socorro, Robertinho, Leandro e Jordana</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Day 2: 06/11 (Quinta-feira) -->
+                <div class="p-6 sm:p-8">
+                    <h4 class="text-2xl font-extrabold text-blue-900 mb-4 flex items-center">
+                        <span class="text-amber-500 mr-3">📅</span> 06/11 (Quinta-feira) - Granja/CE
+                    </h4>
+                    
+                    <!-- Turno 1: Manhã -->
+                    <div class="mb-6 p-4 bg-gray-50 rounded-lg border-l-4 border-cyan-600">
+                        <h5 class="text-xl font-bold text-cyan-600 mb-2">Manhã (Início: 9h)</h5>
+                        <p class="text-gray-700 font-semibold mb-1">Local: EEMTI São José - Adrianópoles, Granja/CE</p>
+                    </div>
+                    
+                    <!-- Turno 2: Tarde -->
+                    <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-cyan-600">
+                        <h5 class="text-xl font-bold text-cyan-600 mb-2">Tarde (Horário: 13:30)</h5>
+                        <p class="text-gray-700 font-semibold mb-3">Local: CLF</p>
+                        <div class="grid md:grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <p class="font-bold text-blue-800">Equipe de Direcionamento:</p>
+                                <p class="text-gray-600">João, Igor, Renato, Naiane</p>
+                            </div>
+                            <div>
+                                <p class="font-bold text-blue-800">Equipe de Apoio:</p>
+                                <p class="text-gray-600">Cristina, Zelinha, Ricardo, Gabriel, Socorro, Cleidiane, Jordana*, Cláudia, Leandro e Robertinho</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-6 bg-gray-50 text-center text-sm text-gray-500 border-t border-gray-200">
+                    *Obs: A equipe de apoio pode ter alterações.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Depoimentos ou Frases Inspiradoras (Cores atualizadas) -->
+    <section class="py-20 hero-bg text-white bg-fixed bg-center">
+        <div class="max-w-4xl mx-auto px-4 text-center bg-blue-900/70 p-6 rounded-xl">
+            <h3 class="text-3xl font-bold mb-10 text-amber-400">
+                DEPOIMENTOS...
+            </h3>
+            
+            <div class="space-y-12">
+                <!-- Depoimento 1 (Estudante) -->
+                <blockquote class="bg-blue-800/80 p-8 rounded-xl shadow-2xl border-l-4 border-amber-400">
+                    <p class="text-2xl font-light italic leading-snug">
+                        🏆"A equipe preparou a melhor Caravana para 2025.!"
+                    </p>
+                    <footer class="mt-4 text-sm font-semibold text-blue-200">
+                        — Equipe CEDEA/CREDE 4 - Camocim
+                    </footer>
+                </blockquote>
+
+                <!-- Depoimento 2 (Equipe CREDE 4) -->
+                <blockquote class="bg-blue-800/80 p-8 rounded-xl shadow-2xl border-l-4 border-amber-400">
+                    <p class="text-2xl font-light italic leading-snug">
+                        ✨"Nossa Caravana é uma educação em movimento com o propósito de oferecer o melhor atendimento aos estudantes do ENEM 2025!"
+                    </p>
+                    <footer class="mt-4 text-sm font-semibold text-blue-200">
+                        — Cleidiane - Equipe CEDEA/CREDE 4 - Camocim
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Chamada Final (Call to Action - Cores e Link atualizados) -->
+    <section id="inscricao" class="py-16 bg-amber-400">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-blue-900 mb-4">
+                Não deixe seu FUTURO para depois!
+            </h3>
+            <p class="text-xl text-blue-800 mb-8">
+                Junte-se a milhares de estudantes que estão prontos para transformar o resultado do ENEM.
+            </p>
+            
+            <!-- Botão de Ação Final (Com contraste e Link atualizado) -->
+            <a href="https://educaceara.github.io/enem/" target="_blank" rel="noopener noreferrer" class="bg-blue-800 text-white text-2xl font-bold py-4 px-12 rounded-full inline-block shadow-2xl hover:bg-cyan-600 transition duration-300 uppercase tracking-widest">
+                Saiba o que PODE e NÃO PODE no dia da Prova!
+            </a>
+                    </div>
+    </section>
+
+    <!-- Footer (Cores atualizadas) -->
+    <footer class="bg-blue-900 py-6 text-center text-blue-300 text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2025 CREDE 4. | Uma iniciativa da Equipe AGI/CEDEA.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
